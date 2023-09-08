@@ -1,0 +1,23 @@
+﻿<Window x:Class="VirusSpread.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirusSpread"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Canvas x:Name="map" Background="LightYellow" Width="420px" Height="420px" Margin="10,10,380,215">
+
+        </Canvas>
+        <Button x:Name="begin" Click="begin_Click" Content="开始" HorizontalAlignment="Left" Height="40" Margin="435,165,0,0" VerticalAlignment="Top" Width="255"/>
+        <Label Content="人活跃度:" HorizontalAlignment="Left" Margin="425,100,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="moveSpeed" Text="20" HorizontalAlignment="Left" Margin="488,106,0,0" VerticalAlignment="Top" Width="202"/>
+        <Label Content="感染人数:" HorizontalAlignment="Left" Margin="425,76,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="infectedNum" Content="0" HorizontalAlignment="Left" Margin="488,76,0,0" VerticalAlignment="Top"/>
+        <Label Content="传染能力:" HorizontalAlignment="Left" Margin="425,131,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="infectious" Text="10" HorizontalAlignment="Left" Margin="488,135,0,0" VerticalAlignment="Top" Width="202"/>
+        <Label Content="模拟轮数:" HorizontalAlignment="Left" Margin="425,51,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="countLable" Content="0" HorizontalAlignment="Left" Margin="488,51,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
