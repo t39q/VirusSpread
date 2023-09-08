@@ -109,7 +109,7 @@ namespace VirusSpread.BussnessLogic
         {
             double X = Math.Abs(A.X - B.X);
             double Y = Math.Abs(A.Y - B.Y);
-            distance = Math.Sqrt(X * X - Y * Y);
+            distance = Math.Sqrt(X * X + Y * Y);
         }
     }
 }
